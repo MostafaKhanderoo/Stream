@@ -15,8 +15,19 @@ public class BaseServiceImpl <ID extends Serializable,T extends BaseEntity<ID>,R
 
    }
 
+
     @Override
     public void save(T t) {
         baseRepository.save(t);
+    }
+
+    @Override
+    public void delete(int id) {
+        baseRepository.delete(id);
+    }
+
+    @Override
+    public void selectAllName() {
+baseRepository.selectAllName();
     }
 }
